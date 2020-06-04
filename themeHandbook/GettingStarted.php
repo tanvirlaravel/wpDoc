@@ -14,6 +14,7 @@
             <a class="nav-link" data-toggle="pill" href="#Setting-Development-Environment">Setting up a Development Environment</a>
 
             <a class="nav-link" data-toggle="pill" href="#ThemeDevelopmentExamples">Theme Development Examples</a>
+
         </div>
     </div>
     <div class="col-9">
@@ -37,10 +38,8 @@
 
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                 <h4 class="py-2 pl-5 pr-2 bg-info d-inline-block">What is a Theme?</h4>
-                <p>A WordPress theme changes the design of your website, often including its layout. Changing your theme changes how your site looks on the front-end, i.e. what a visitor sees when they browse to your site on the web.</p>
+                <p>A WordPress theme changes the design of your website, often including its layout. </p>
 
-                <h4 class="py-2 pl-5 pr-2 bg-info d-inline-block">What can themes do?</h4>
-                <p>Themes take the content and data stored by WordPress and display it in the browser. When you create a WordPress theme, you decide how that content looks and is displayed.</p>
 
                 <h4 class="py-2 pl-5 pr-2 bg-info d-inline-block">What are themes made of?</h4>
                 <p>At their most basic level, WordPress themes are collections of different files that work together to create what you see, as well as how your site behaves.</p>
@@ -82,6 +81,20 @@
                 <p>You can refer to the WordPress Releases page to access older versions of WordPress. Then you can download and install older WordPress versions, creating multiple development sites, each running different WordPress versions for testing.</p>
 
                 <h4>WP_DEBUG</h4>
+                <ul>
+                    <li>define('WP_DEBUG', true);</li>
+                    <li>define('WP_DEBUG_LOG', true);</li>
+                    <li>define('WP_DEBUG_DISPLAY', true);</li>
+                    <li>@ini_set('display_errors', E_ALL);</li>
+                </ul>
+                <p>In order to log the errors, use this block instead.</p>
+                <ul>
+                    <li>define('WP_DEBUG', true);</li>
+                    <li>define('WP_DEBUG_LOG', true);</li>
+                    <li>define('WP_DEBUG_DISPLAY', true);</li>
+                    <li>@ini_set('display_errors', 0);</li>
+                </ul>
+                <hr>
                 <h5>WP_DEBUG</h5>
                 <p>The WP_DEBUG PHP <span class="bg-secondary px-2 text-white">constant</span> is used to trigger the built-in “debug” mode on your WordPress installation. </p>
 
@@ -118,6 +131,8 @@
                 <p>Additionally, all themes published in the theme directory are reviewed for standards prior to being published. Reviewing themes in the directory is a great way to better understand how theme development works and is a good way to get inspiration for your own theme.</p>
 
             </div>
+
+
 
 
         </div>
