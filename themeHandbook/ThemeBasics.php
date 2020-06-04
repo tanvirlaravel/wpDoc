@@ -434,6 +434,13 @@ so it makes sense to use the newer functions when possible.
                 <h4>Terms</h4>
                 <p>Terms are items within your taxonomy. So, for example, if you have the Animal taxonomy you would have the terms, dogs, cats, and sheep. Terms can be created via the WordPress admin, or you can use the wp_insert_term() function.</p>
 
+                <h4>Database Schema</h4>
+                <ul>
+                    <li>wp_terms – stores all of the terms</li>
+                    <li>wp_term_taxonomy – places the term in a taxonomy</li>
+                    <li>wp_term_relationships – relates the taxonomy to an object (for example, category to post)</li>
+                </ul>
+
             </div>
 
 
